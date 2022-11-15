@@ -1,0 +1,19 @@
+-- create
+CREATE TABLE Persons (
+Personid int NOT NULL AUTO_INCREMENT,
+name text NOT NULL,
+age int,
+adress text,
+PRIMARY KEY (Personid)
+);
+
+-- insert
+INSERT INTO Persons (name, age, adress) 
+VALUES ('Иван', 22, 'Москва, ул. Ленина, д. 2, кв. 135');
+INSERT INTO Persons (name, age, adress) 
+VALUES ('Сергей', 30, 'Санкт-Петербург, ул. Афонская, д.32, кв. 5');
+INSERT INTO Persons (name, age, adress) 
+VALUES ('Анна', 22, 'Краснодар, ул. Чехова, д. 3, кв. 1');
+
+-- fetch 
+SELECT * FROM Persons
